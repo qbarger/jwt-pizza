@@ -1,33 +1,21 @@
-# Incident: YYYY-MM-DD HH-mm-ss
+# Incident: 2025-04-08 11-31-04
 
 ## Summary
 
-> [!NOTE]
-> Write a summary of the incident in a few sentences. Include what happened, why, the severity of the incident and how long the impact lasted.
-
 ```md
-**EXAMPLE**:
+Between the hour of 11:16 am and 11:40 am on Tuesday, April 8, 2025, one user encountered an error preventing them from ordering pizza. The event was triggered by a change in the server response of the pizza factory service at about 11:15 am.
 
-Between the hour of {time range of incident, e.g. 15:45 and 16:35} on {DATE}, {NUMBER} users encountered {EVENT SYMPTOMS}. The event was triggered by a {CHANGE} at {TIME OF CHANGE THAT CAUSED THE EVENT}. The {CHANGE} contained {DESCRIPTION OF OR REASON FOR THE CHANGE, such as a change in code to update a system}.
+A bug in this code caused a 500 error. The event was detected by Grafana. The team started working on the event by 11:16 am. This error incident affected 100% of users.
 
-A bug in this code caused {DESCRIPTION OF THE PROBLEM}. The event was detected by {MONITORING SYSTEM}. The team started working on the event by {RESOLUTION ACTIONS TAKEN}. This {SEVERITY LEVEL} incident affected {X%} of users.
-
-There was further impact as noted by {e.g. NUMBER OF SUPPORT TICKETS SUBMITTED, SOCIAL MEDIA MENTIONS, CALLS TO ACCOUNT MANAGERS} were raised in relation to this incident.
+There was no further impact.
 ```
 
 ## Detection
 
-> [!NOTE]
-> When did the team detect the incident? How did they know it was happening? How could we improve time-to-detection? Consider: How would we have cut that time by half?
-
 ```md
-**EXAMPLE**:
+This incident was detected when the "Pizza Creation Failing" error was triggered and Quenton Barger was notified.
 
-This incident was detected when the {ALERT TYPE} was triggered and {TEAM/PERSON} were paged.
-
-Next, {SECONDARY PERSON} was paged, because {FIRST PERSON} didn't own the service writing to the disk, delaying the response by {XX MINUTES/HOURS}.
-
-{DESCRIBE THE IMPROVEMENT} will be set up by {TEAM OWNER OF THE IMPROVEMENT} so that {EXPECTED IMPROVEMENT}.
+Quenton Barger acknowledged the alert and resolved the issue by 11:40 am.
 ```
 
 ## Impact
