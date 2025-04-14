@@ -39,9 +39,11 @@ There are several other types of serverless deployment that employ similar metho
   Security is a very big topic for any software developer. An even bigger question may be "How do I maintain application security when I am turning over my deployment to a third-party provider?" Lucky for us, these cloud providers offer a lot of security help through things such as roles and secrets.
   
 **Secrets**
+
   It is critical to be able to pass confidential variables like API keys, account passwords, and database credentials when dealing with cloud platforms. But how do you accomplish this without exposing your credentials? This is where "secrets" enter. A cloud provider will allow you to define secrets for your environment or space, and store them for you. You can then use the provider's way to tag them in your code, and when you deploy your application the cloud provider will fill in those secrets when they need to be used. This creates a secure system for passing important credentials that are needed in your code.
 
 **Roles**
+
   One of the other offerings from cloud providers are "roles". Roles serve as a way to close off access to functions and limit what certain actions can do and see. For example, if you only want one of your functions to access another action during the deployment process, you can set a permissions role on that action and then give that role to your function. This means that the only access to that action is from the one function during deployment. This not only helps security, but it also allows you to find breaches and abnormalities quicker. 
 
 ---
