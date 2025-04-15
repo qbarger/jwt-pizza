@@ -1,12 +1,44 @@
-# Penetration Testing
-
-Names: Quenton Barger
+# Penetration Testing - Quenton Barger and Blaine Van Item
 
 ### Solo attack
+
 1. Remove franchises
-2. SQL injection to change password
-3. Overload pizza production
+   
+| Item           | Result                                                                         |
+| -------------- | ------------------------------------------------------------------------------ |
+| Date           | April 15, 2025                                                                 |
+| Target         | pizza.sobolo.click                                                       |
+| Classification | Security Misconfiguration                                                                      |
+| Severity       | 1                                                                              |
+| Description    | Admin account breached. All franchises deleted through the franchise endpoint.                |
+| Images         | ![Dead database](deadDatabase.png) <br/> Stores no longer accessible. |
+| Corrections    | More secure admin password, or regular changing of the password.                                                          |
+
+2. Change admin password
+
+| Item           | Result                                                                         |
+| -------------- | ------------------------------------------------------------------------------ |
+| Date           | April 15, 2025                                                                 |
+| Target         | pizza.sobolo.click                                                       |
+| Classification | Identification and Authentication Failures                                                                      |
+| Severity       | 3                                                                              |
+| Description    | Admin account breached. Admin password changed without admin knowledge.                |
+| Images         | ![Dead database](deadDatabase.png) <br/> Admin cannot login. |
+| Corrections    | More secure admin account.                                                          |
+
+3. Change role
+   
+| Item           | Result                                                                         |
+| -------------- | ------------------------------------------------------------------------------ |
+| Date           | April 15, 2025                                                                  |
+| Target         | pizza.sobolo.click                                                       |
+| Classification | Security Misconfiguration                                                                      |
+| Severity       | 3                                                                              |
+| Description    | All franchisee's account roles removed. All franchisees became diners.                |
+| Images         | ![Dead database](deadDatabase.png) <br/> No longer able to create a franchise. |
+| Corrections    | Secure admin account. Attack came from the same breach.                                                          |
 
 ---
 
 ### Peer attack
+
