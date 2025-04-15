@@ -11,7 +11,7 @@
 | Classification | Security Misconfiguration                                                                      |
 | Severity       | 1                                                                              |
 | Description    | Admin account breached. All franchises deleted through the franchise endpoint.                |
-| Images         | ![Franchises removed](./images/Attack.png) <br/> Stores no longer accessible. |
+| Images         | ![Franchises removed](./images/NoFranchises.png) <br/> Stores no longer accessible. |
 | Corrections    | More secure admin password, or regular changing of the password.                                                          |
 
 2. Change admin password
